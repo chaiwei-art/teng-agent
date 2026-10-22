@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "teng-agent"
+version = "0.1.0"
+description = "Mall customer-service agent with tool calling, memory and offline eval."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["agent", "llm", "function-calling", "customer-service", "rag"]
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+teng-agent = "teng_agent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["teng_agent*"]
+
+[tool.setuptools.package-data]
+teng_agent = ["mock_data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

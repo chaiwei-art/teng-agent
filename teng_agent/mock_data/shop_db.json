@@ -1,0 +1,74 @@
+{
+  "orders": [
+    {
+      "order_id": "TM20261001001",
+      "user_id": "u1001",
+      "status": "shipped",
+      "items": [{"name": "无线蓝牙耳机", "qty": 1, "price": 299.0}],
+      "total": 299.0,
+      "created_at": "2026-10-01 10:23:00",
+      "logistics": {
+        "carrier": "顺丰速运",
+        "tracking_no": "SF1234567890",
+        "status": "运输中",
+        "location": "昆明转运中心",
+        "eta": "2026-10-24"
+      }
+    },
+    {
+      "order_id": "TM20260920002",
+      "user_id": "u1001",
+      "status": "delivered",
+      "items": [{"name": "智能手表", "qty": 1, "price": 1299.0}],
+      "total": 1299.0,
+      "created_at": "2026-09-20 15:41:00",
+      "logistics": {
+        "carrier": "京东物流",
+        "tracking_no": "JD9876543210",
+        "status": "已签收",
+        "location": "昆明五华区",
+        "eta": "2026-09-23"
+      }
+    },
+    {
+      "order_id": "TM20261010003",
+      "user_id": "u1002",
+      "status": "pending",
+      "items": [{"name": "机械键盘", "qty": 2, "price": 459.0}],
+      "total": 918.0,
+      "created_at": "2026-10-10 09:12:00",
+      "logistics": null
+    },
+    {
+      "order_id": "TM20261015004",
+      "user_id": "u1001",
+      "status": "refunding",
+      "items": [{"name": "USB-C 数据线", "qty": 3, "price": 29.9}],
+      "total": 89.7,
+      "created_at": "2026-10-15 20:05:00",
+      "logistics": {
+        "carrier": "中通快递",
+        "tracking_no": "ZT5556667778",
+        "status": "退货运输中",
+        "location": "昆明收寄点",
+        "eta": "2026-10-25"
+      }
+    }
+  ],
+  "products": [
+    {"product_id": "P001", "name": "无线蓝牙耳机", "category": "数码", "price": 299.0, "stock": 120, "tags": ["蓝牙", "降噪", "耳机"]},
+    {"product_id": "P002", "name": "智能手表", "category": "穿戴", "price": 1299.0, "stock": 45, "tags": ["手表", "运动", "健康"]},
+    {"product_id": "P003", "name": "机械键盘", "category": "外设", "price": 459.0, "stock": 80, "tags": ["键盘", "机械", "游戏"]},
+    {"product_id": "P004", "name": "USB-C 数据线", "category": "配件", "price": 29.9, "stock": 500, "tags": ["数据线", "充电", "Type-C"]},
+    {"product_id": "P005", "name": "便携充电宝", "category": "配件", "price": 129.0, "stock": 200, "tags": ["充电宝", "移动电源", "便携"]},
+    {"product_id": "P006", "name": "降噪耳机 Pro", "category": "数码", "price": 1999.0, "stock": 30, "tags": ["耳机", "降噪", "高端"]}
+  ],
+  "faq": [
+    {"q": "怎么退款", "a": "已发货订单需先拒收或寄回商品，签收后7天内可在“我的订单”申请退款，审核通过后1-3个工作日原路退回。"},
+    {"q": "运费多少", "a": "全场满99元包邮；不满99元收8元运费。西藏、新疆等偏远地区另计。"},
+    {"q": "发货时间", "a": "现货商品当天16点前付款当天发货，之后付款次日发货。预售商品以详情页时间为准。"},
+    {"q": "怎么开发票", "a": "订单完成后在订单详情页申请电子发票，开具后发送至绑定邮箱。"},
+    {"q": "保修多久", "a": "数码产品全国联保1年，配件保修3个月。保修需提供订单号与购买凭证。"},
+    {"q": "支持哪些支付方式", "a": "支持微信支付、支付宝、银行卡及花呗分期。"}
+  ]
+}
